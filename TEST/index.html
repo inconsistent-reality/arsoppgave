@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css" media="screen and (min-device-width: 800px)">
+    <link rel="stylesheet" href="../style/phonestyle.css" media="screen and (max-device-width: 800px)">
+    <title>Document</title>
+    <style>
+        .BK {
+            background-color: red;
+            text-align: center;
+            text-emphasis-color: yellow;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            text-emphasis-color: yellow;
+        }
+
+        .box {
+            border: 3px solid #666;
+            background-color: #ddd;
+            border-radius: .5em;
+            padding: 10px;
+            cursor: move;
+        }
+
+        .box.over {
+            border: 3px dotted #666;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="meny">
+        <a class="orange" href="/index.php">Hjem</a>
+        <a class="darkorange" href="/php/Meny.php">Meny</a>
+        <a class="orange" href="/php/Anmeldelse.php">Anmeldelse</a>
+        <a class="orange" href="/php/bord.php">Bord</a>
+        <a class="orange" href="/php/FAQ.php">FAQ</a>
+        <a class="orange" href="/php/tickting/ticket.php">ticket</a>
+        <a class="orange" href="/php/BB.php">Bygg</a>
+      
+    </div>
+    <div class="BK">
+        <h1>FARGER AAAAAAAAAAAAAAAAAAAUUUUUUUUUUUUUUUUUUUUUUUUUUUGGGGGGGGGGGGGGGGHHHHHHHHHHHH</h1>
+        <h3>FARGER ER n i c e</h3>
+        <div class="container">
+            <div draggable="true" class="box">A</div>
+            <div draggable="true" class="box">B</div>
+            <div draggable="true" class="box">C</div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            let dragSrcEl = null;
+
+            function handleDragStart(e) {
+                this.style.opacity = '0.4';
+                dragSrcEl = this;
+
+                e.dataTransfer.effectAllowed = 'move';
+                e.dataTransfer.setData('text/html', this.innerHTML);
+            }
+
+            function handleDragEnd(e) {
+                this.style.opacity = '1';
+
+                let items = document.querySelectorAll('.container .box');
+                items.forEach(function (item) {
+                    item.classList.remove('over');
+                });
+            }
+
+            function handleDragOver(e) {
+                e.preventDefault();
+                return false;
+            }
+
+            function handleDragEnter(e) {
+                this.classList.add('over');
+            }
+
+            function handleDragLeave(e) {
+                this.classList.remove('over');
+            }
+
+            function handleDrop(e) {
+                e.stopPropagation();
+                e.preventDefault();
+
+                if (dragSrcEl !== this) {
+                    dragSrcEl.innerHTML = this.innerHTML;
+                    this.innerHTML = e.dataTransfer.getData('text/html');
+                }
+
+                return false;
+            }
+
+            let items = document.querySelectorAll('.container .box');
+            items.forEach(function (item) {
+                item.addEventListener('dragstart', handleDragStart);
+                item.addEventListener('dragend', handleDragEnd);
+                item.addEventListener('dragover', handleDragOver);
+                item.addEventListener('dragenter', handleDragEnter);
+                item.addEventListener('dragleave', handleDragLeave);
+                item.addEventListener('drop', handleDrop);
+            });
+        });
+    </script>
+</body>
+</html>
+<!-- avsluter kode -->

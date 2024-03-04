@@ -1,0 +1,26 @@
+.text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.phonetext {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: none;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 414px) {
+    .text {
+        display: none; /* Skjul på små skjermer */
+    }
+
+    .phonetext {
+        display: block; /* Vis på små skjermer */
+    }
+}

@@ -1,0 +1,678 @@
+
+body {
+  background: #f7a761;
+  color: rgb(0, 0, 0);
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-size: 16px; /* Legg til ønsket fontstørrelse for små skjermer */
+  zoom: 80%;
+}
+
+
+
+body{
+    background: #f7a761;
+    color: rgb(0, 0, 0);
+    margin: 0px auto;
+    overflow-x: hidden;
+    }
+
+    /* Stiler for store skjermer (800px og oppover) */
+
+.meny{
+    display: flex;
+    justify-content: center;
+    margin: 1vw;
+    gap: 4vw;
+    font-size: 27px;
+    background-color: rgb(53, 53, 53);
+    padding: 2vw;
+    font-weight: bolder;
+    
+    border: solid #0569B4 4px;
+    border-radius: 20px;
+
+    
+}
+.overskrift{
+    text-align: center;
+    scale: 2;
+    padding: 3vh;
+}
+
+.meny-link{
+    color: red;
+}
+
+.burgermeny{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+}   
+
+.burger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 13vw;
+    height: 45vh;
+    border: #0569B4 4px solid;
+    border-radius: 20px;
+    padding: 1vw;
+    font-size: 6px+2vh;
+    color: #0569B4;
+    text-align: center;
+    transition: 0.5s;
+    
+}
+
+.burger:hover{
+  box-shadow: #0b1008 10px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.burger-img{
+    width: 10vw;
+}
+
+.orange{
+    color: #f7a761;
+    transition: 0.5s;
+}
+
+.orange:hover{
+  scale: 1.2;
+  color: #4f84ae;
+}
+
+
+
+.line{
+  width: 40vw;
+  border: solid 2px #0569B4;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.epiline{  
+  animation: outcolorChange 5s infinite alternate;
+}
+
+
+@keyframes outcolorChange {
+  0% {
+      border: solid  rgb(255, 0, 0);
+  }
+
+  25% {
+      border: solid  rgb(0, 255, 0);
+  }
+
+  50% {
+      border: solid  rgb(0, 0, 255);
+  }
+
+  75% {
+      border: solid  rgb(255, 255, 0);
+  }
+
+  100% {
+      border: solid  rgb(255, 0, 255);
+  }
+}
+
+.allergi{
+  background-color: white;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  border: #0569B4 4px solid;
+  border-radius: 20px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.skrivanmeld{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  border: #0569B4 4px solid;
+  border-radius: 20px;
+  padding:  5vw;
+  color: #0569B4;
+  font-size: x-large;
+  flex-direction: column;
+
+}
+
+.reviews{
+  justify-content: center;
+  background-color: white;
+  width: 55vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vh;
+  border: #0569B4 4px solid;
+  border-radius: 20px;
+  padding:  2vw;
+  color: #0569B4;
+  overflow: hidden;
+
+}
+
+.darkorange{
+    color: #4f84ae;
+    text-decoration: underline;
+}
+.H1{
+    display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+height: 80%;
+}
+.frosidemeny{
+    /*display: flex;
+    justify-content: center;
+    align-content: center;*/
+    font-size: large;
+    additive-symbols: pictures;
+    height: 60vh;
+    color: orange;
+    background-image: url("../bilder/b.jpg");
+    background-size: cover;
+}
+
+.bordreserver{
+  background-color: white;
+  width: 55vw;
+  margin-left: 3vw;
+  margin-top: 1vh;
+  border: #0569B4 4px solid;
+  border-radius: 20px;
+  padding:  2vw;
+  color: #0569B4;
+  overflow: hidden;
+
+}
+
+.bestilltid{
+  width: 40px;
+}
+
+
+.linker{
+    display: flex;
+    gap: 60px;
+    color: #f7a761;
+    text-decoration: none;
+    justify-content: center;
+    font-size: x-large;
+}
+a{
+    text-decoration: none;
+}
+
+.OmOss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bunn{
+    bottom: 0;
+}
+.bunntext{
+    background-color: gray;
+    font-size: small;
+    color: white;
+    padding-top: 7px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: absolute;
+    
+}
+
+.kon{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+   
+}
+.qr-box{
+    display: flex;
+    align-content: right;
+}
+
+.qr{
+    width: 177px;
+    display: block;
+     margin-left: auto;
+}
+.gjemt{
+    display: none;
+}
+
+.border{
+    border: solid black 3px;
+    right: 50px;  
+    width: fit-content;  
+    margin-left: auto;
+}
+
+.absolute{
+    margin-top: 37px;
+    position: absolute;
+    
+}
+.bord{
+width: 75px;
+height: 75px;
+float: left;
+margin: 10px;
+border-color: blue;
+background-color: greenyellow;
+
+}
+.flex{
+display: flex;
+}
+.canvas-container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .tatt
+  {
+    color: #f7a761;
+   font-size: xx-large;
+  }
+
+  .rød{
+   color: red;
+    font-size: xx-large;
+  }
+
+  .Vad{
+    padding: 5px;
+    padding-left: 30px;
+    font-size:larger;
+    animation: colorChange 5s infinite alternate; 
+  }
+  
+  @keyframes colorChange {
+    0% {
+      background-color: rgb(255, 0, 0);
+    }
+    25% {
+      background-color: rgb(0, 255, 0);
+    }
+    50% {
+      background-color: rgb(0, 0, 255);
+    }
+    75% {
+      background-color: rgb(255, 255, 0);
+    }
+    100% {
+      background-color: rgb(255, 0, 255);
+    }
+  }
+  /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+
+  
+  
+  background-color: #dd3636;
+  border: solid 1px #e90202;
+  color: #f7a761;
+  cursor: pointer;
+  padding: 25px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  font-weight:bold ;
+  text-align: center;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #0b1008;
+  font-weight: bold ;
+
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 30px;
+  background-color: #f7a761;
+  display: none;
+  overflow: hidden;
+  text-align: center;
+}
+.faq-box{
+
+margin-left: 7vw;
+margin-right:7vw ;
+overflow: hidden;
+border: #0569B4 4px solid;
+border-radius: 20px;
+text-align: center;
+
+
+
+
+
+
+
+}
+
+.green{
+color: green;
+font-weight: bold;
+}
+
+.red{
+  color: #e90202;
+  font-weight: bold;
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+}
+.knapp{
+  background-color: white;
+  width: 10vw;
+  margin-left: auto;
+  margin-right: auto;
+  border: #0569B4 4px solid;
+  border-radius: 20px;
+  padding: 5px;
+  padding-left:  1vw;
+  color: #0569B4;
+  overflow: hidden;  
+}
+
+
+.login{
+  
+  background-color: white;
+  width: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  border: #0569B4 4px solid;
+  border-radius: 20px;
+  padding:  5vw;
+  color: #0569B4;
+  overflow: hidden;
+}
+
+.bordmanage{
+  background-color: white;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  border: #0569B4 4px solid;
+  border-radius: 20px;
+  padding:  5vw;
+  color: #0569B4;
+  overflow: hidden;
+}
+
+.centertxt{
+  text-align: center;
+}
+
+
+.Sin{
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: blue;
+  font-weight:bolder;
+  font-size: xx-large;
+}
+
+.tx{
+font-weight: bold;
+  font-size: x-large;
+color: white;
+background-color: purple;
+border-radius: 10px;
+}
+
+
+table{
+width: 70vw;
+
+}
+
+table, th, td {
+  border:1px solid black;
+}
+
+td{
+  text-align: center;
+}
+
+
+.allbygg{
+  justify-content: center;
+}
+
+.drop-container-pic {
+  width: 10vw;
+  height: 10vh;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+  
+}
+.drop-container {
+  width: 10vw;
+  height: 10vh;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+  background-color: white; 
+}
+
+.drop-invis {
+  width: 10vw;
+  height: 10vh;
+  padding: 10px;
+}
+
+.drop-container-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: -75vh;
+  gap: 5vh;
+}
+
+.drop-container-container-container{
+  display: flex;
+  gap: 5vh;  
+}
+
+
+
+.ingimg {
+  width: 10vw;
+  height: 15vh;
+  
+
+}
+
+
+.epi {
+  animation: colorChange 5s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+      color: rgb(255, 0, 0);
+  }
+
+  25% {
+      color: rgb(0, 255, 0);
+  }
+
+  50% {
+      color: rgb(0, 0, 255);
+  }
+
+  75% {
+      color: rgb(255, 255, 0);
+  }
+
+  100% {
+      color: rgb(255, 0, 255);
+  }
+}
+
+
+.fixed {
+  right: 5vw;
+  position: sticky;
+  top: 20vh;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin-top: 10vh;
+
+  /* position: sticky;
+  position: sticky;
+  top: 0;
+  background-color: yellow;
+  padding: 50px;
+  font-size: 20px; */
+}
+
+.fixed-line{
+  
+  width: 40vw;
+
+}
+
+.fixed-place{
+  margin-left: 55vw;
+}
+
+.fixedflex {
+  display: flex;
+  justify-content: center;
+
+}
+
+.designtext{
+  justify-content: center;
+  background-color: white;
+  border: #0569B4 solid 3px;
+  border-radius: 25px;
+  color: #0569B4;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 2vh;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tk{
+  display: flex;
+  justify-content: center;
+}
+
+.ombygg{
+  background-color: white;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  border: #0569B4 4px solid;
+  border-radius: 20px;
+  font-size: large;
+  padding:  2vw;
+  color: #0569B4;
+  overflow: hidden;  
+}
+
+.bestillknapp{
+  background-color: white;
+  width: 10vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  border: #0569B4 4px solid;
+  border-radius: 20px;
+  font-size: x-large;
+  padding:  1vw;
+  color: #0569B4;
+  overflow: hidden; 
+}
+
+.bestillknapp:hover{
+  cursor:grab;
+}
+.hart{
+  color:red;
+
+
+}
+.showb{
+  max-width: 20%;
+ max-height: 20%;
+}
+
+.allborgershow{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  justify-content: center;
+}
+
+.borgershow{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+  border: #0569B4 4px solid;
+  color: #0569B4;
+
+  padding: 10px;
+  border-radius: 25px;  
+
+}
+
+.cewnterimg{
+  /* margin-left: 30vw; 
+  margin-right: auto;
+  width: 40vw; */
+  display: flex;
+  justify-content: center;
+  
+}
+
+.cewnterimgimg{
+  width: 40vw;
+}

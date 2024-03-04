@@ -1,0 +1,16 @@
+1. legg til en funksjunerende meny
+    a. + estetisk elementer(bilder og text)
+    b. legg til en funksjon der admin kan redigere meny (endre, fjerne og legge til produkter)(vis det er tid)
+
+2. finpusse andmelser siden
+    a. visse tidligere andmelser
+    b. sete et astetisk stjerne system
+
+4. reserver bord (hvis det er nokk tid)
+    a.tid bord og komentar
+    b.navn, tlf, email
+
+
+
+3. sette en en rick roll qr V
+

@@ -1,0 +1,224 @@
+/* Generelle stiler som gjelder for alle enheter */
+body {
+    background: #f7a761;
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-size: 16px; /* Legg til ønsket fontstørrelse for små skjermer */
+}
+
+/* Stiler for store skjermer (800px og oppover) */
+.meny {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    font-size: 20px;
+    background-color: rgb(53, 53, 53);
+    padding: 5vw;
+    z-index: 10;
+    align-content: center;
+    justify-content: center;
+}
+
+/* Legg til medieforespørsel for mindre skjermer */
+    /* Redefiner stiler for mindre skjermer her */
+
+
+
+    .burger-img {
+        width: 20vw; /* Gjør bildene fullt responsive ved å bruke 100% bredde */
+        max-width: 20vw; /* Begrens maksimal bredde for å hindre at bildene blir for store */
+        height: auto; /* La høyden skaleres proporsjonalt */
+    }
+
+    /* Fortsett med å legge til eller justere andre stiler etter behov */
+
+
+.overskrift {
+    text-align: center;
+}
+
+.meny-link {
+    color: red;
+}
+
+.login{
+
+
+font-size: x-large;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+
+/*
+  font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center; 
+    width: 80%;  Adjust the width based on your design *
+    max-width: 400px; /* Set a maximum width to prevent it from becoming too wide *
+    margin: 0 auto; /* Center the box horizontally 
+    padding: 20px; /* Add padding for better spacing */
+    
+}
+
+.burgermeny {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 90%; /* Endre bredden for mindre skjermer */
+    border: black 2px solid;
+    border-radius: 20px;
+    padding: 1vw;
+    text-align: center;
+}
+
+.orange {
+    color: #f7a761;
+}
+
+.darkorange {
+    color: #896546;
+    text-decoration: underline;
+}
+
+.H1 {
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 50%;
+}
+
+.frosidemeny {
+    font-size: large;
+    additive-symbols: pictures;
+    height: 60vh;
+    color: orange;
+    background-image: url("../bilder/b.jpg");
+    background-size: cover;
+}
+
+.linker {
+    display: flex;
+    gap: 16px;
+    color: #f7a761;
+    text-decoration: none;
+    justify-content: center;
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+}
+
+.OmOss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bunn {
+    bottom: 0;
+}
+
+.bunntext {
+    background-color: gray;
+    font-size: small;
+    color: white;
+    padding-top: 7px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.kon {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.qr-box {
+    display: flex;
+    align-content: right;
+}
+
+.qr {
+    width: 177px;
+    display: block;
+    margin-left: auto;
+}
+
+.gjemt {
+    display: none;
+}
+
+.border {
+    border: solid black 3px;
+    right: 500px;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.absolute {
+    margin-top: 37px;
+    position: absolute;
+}
+
+.bord {
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin: 10px;
+    border-color: blue;
+    background-color: greenyellow;
+}
+
+.flex {
+    display: flex;
+}
+
+.canvas-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tatt {
+    color: #f7a761;
+    font-size: xx-large;
+}
+
+.rød {
+    color: red;
+    font-size: xx-large;
+}
+
+.Vad {
+    padding: 5px;
+    padding-left: 30px;
+    font-size: larger;
+    animation: colorChange 5s infinite alternate;
+}
+.classTest{
+
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+
+/* Legg til keyframes for fargeendring her */

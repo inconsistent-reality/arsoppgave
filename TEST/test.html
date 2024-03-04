@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css" media="screen and (min-device-width: 800px)">
+    <link rel="stylesheet" href="../style/phonestyle.css" media="screen and (max-device-width: 800px)">
+    <title>Document</title>
+    <style>
+        .drop-container {
+            width: 10vw;
+            height: fit-content;
+            min-height: 10vh;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
+
+        img {
+            width: 15vw;
+            height: 15vh;
+        }
+
+        .epi {
+            animation: colorChange 5s infinite alternate;
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: rgb(255, 0, 0);
+            }
+
+            25% {
+                color: rgb(0, 255, 0);
+            }
+
+            50% {
+                color: rgb(0, 0, 255);
+            }
+
+            75% {
+                color: rgb(255, 255, 0);
+            }
+
+            100% {
+                color: rgb(255, 0, 255);
+            }
+        }
+
+        .fixed {
+            position: fixed;
+            display: flex;
+            top: 20vh;
+            right: 0;
+            padding-right: 10vw;
+        }
+    </style>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev, id) {
+            ev.preventDefault();
+
+            var data = ev.dataTransfer.getData("text");
+            // Clone the dragged element
+            var clone = document.getElementById(data).cloneNode(true);
+            console.log(ev.target.innerHTML)
+
+            // Remove all content from the target element
+            while (ev.target.firstChild) {
+                ev.target.removeChild(ev.target.firstChild);
+            }
+
+            // Append the clone to the drop container
+            // ev.target.appendChild(clone);
+            ev.target.innerHTML=document.getElementById(id);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="meny">
+        <a class="orange" href="/index.php">Hjem</a>
+        <a class="darkorange" href="/php/Meny.php">Meny</a>
+        <a class="orange" href="/php/Anmeldelse.php">Anmeldelse</a>
+        <a class="orange" href="/php/bord.php">Bord</a>
+        <a class="orange" href="/php/FAQ.php">FAQ</a>
+        <a class="orange" href="/php/tickting/ticket.php">ticket</a>
+        <a class="orange" href="/php/BB.php">Bygg</a>
+      
+    </div>
+    <h1 class="epi">BYGG DIN EGEN BURGER </h1>
+    <div>
+        <div class="drop-container" id="drop" ondrop="drop(event, 'drop')" ondragover="allowDrop(event)"></div>
+        <div class="drop-container" id="drop1" ondrop="drop(event, 'drop1')" ondragover="allowDrop(event)"></div>
+        <div class="drop-container" id="drop2" ondrop="drop(event, 'drop2')" ondragover="allowDrop(event)"></div>
+        <div class="drop-container" id="drop3" ondrop="drop(event, 'drop3')" ondragover="allowDrop(event)"></div>
+        <div class="drop-container" id="drop4" ondrop="drop(event, 'drop4')" ondragover="allowDrop(event)"></div>
+        <div class="drop-container" id="drop5" ondrop="drop(event, 'drop5')" ondragover="allowDrop(event)"></div>
+        <div class="drop-container" id="drop6" ondrop="drop(event, 'drop6')" ondragover="allowDrop(event)"></div>
+        <div class="drop-container" id="drop7" ondrop="drop(event, 'drop7')" ondragover="allowDrop(event)"></div>
+        <div class="drop-container" id="drop8" ondrop="drop(event, 'drop8')" ondragover="allowDrop(event)"></div>
+        <br>
+    </div>
+
+    <div class="fixed">
+        <div>
+            <img id="drag" src="../bilder/cheddar-cheese.jpg" draggable="true" ondragstart="drag(event)">
+            <br>
+            <img id="drag1" src="../bilder/bacong.png" draggable="true" ondragstart="drag(event)">
+            <br>
+            <img id="drag2" src="../bilder/agurk.png" draggable="true" ondragstart="drag(event)">
+            <br>
+        </div>
+        <div>
+            <img id="drag3" src="../bilder/lok.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
+            <br>
+            <img id="drag4" src="../bilder/Ketchup.png" draggable="true" ondragstart="drag(event)">
+            <br>
+            <img id="drag5" src="../bilder/patty.avif" draggable="true" ondragstart="drag(event)">
+            <br>
+        </div>
+        <div>
+            <img id="drag6" src="../bilder/topb.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
+            <br>
+            <img id="drag7" src="../bilder/let.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+            <br>
+            <img id="drag8" src="../bilder/tomatoes.png" draggable="true" ondragstart="drag(event)">
+            <br>
+        </div>
+        <div>
+            <img id="drag9" src="../bilder/majones.png" draggable="true" ondragstart="drag(event)">
+            <br>
+            <img id="drag10" src="../bilder/bottom.png" draggable="true" ondragstart="drag(event)">
+            <br>
+            <img id="drag11" src="../bilder/kløk.png" draggable="true" ondragstart="drag(event)">
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- avsluter kode -->
