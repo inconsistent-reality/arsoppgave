@@ -18,8 +18,9 @@ session_start();
 
 </head>
 <body>
+    <div class="forsidebildet"></div>
     <div class="frosidemeny">
-        <div class="linker">
+        <div class="linker forsidelinker">
         <a class="darkorange" href="index.php">Hjem</a>
         <a class="orange" href="php/Meny.php">Meny</a>
         <a class="orange" href="php/Anmeldelse.php">Anmeldelse</a>

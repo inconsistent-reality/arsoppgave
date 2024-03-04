@@ -1,0 +1,33 @@
+skriv menesklig brukerstøtte (faq)
+alergier
+bruke samme kode
+risiko analyse (prob og løsninger)
+• Dokumentere arbeidet ditt
+• Sette opp server
+o Webserver
+
+o Grunnleggende overfladisk datastrukturer
+• Opplæringsmaterialet
+• Til 2 forskjellige målgrupper
+• Instruksjonsvideo
+• FAQ på en webside
+• Risikoanalyse og tiltaksplan
+o Dokumentere back-up rutiner
+• Dokumentasjon
+• Kartlegging av lovverk (skjema)
+• Nettverksdiagram
+• Teknisk dokumentasjon
+bokser med farger 
+
+fikse tiketing 
+finnpuse alle sider 
+mer js D-:
+mer astetisk
+fullstedig funkjunalitet
+day one 
+
+importante
+1. faq side meg crud
+2. simpel dokumentasjon
+3. fin kode
+4. passord endring (bedre ux)
