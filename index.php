@@ -35,7 +35,7 @@ session_start();
 
         <?php
         if($_SESSION){
-            echo '<a class="orange" href="/php/passord.php">passord</a>';
+            echo '<a class="orange" href="passord.php">passord</a>';
 
             echo '<a class="orange" href="/login/logout.php">logout</a>'; 
         }

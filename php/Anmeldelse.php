@@ -25,10 +25,10 @@ include("koble.php");
         <a class="orange" href="../index.php">Hjem</a>
         <a class="orange" href="Meny.php">Meny</a>
         <a class="darkorange" href="Anmeldelse.php">Anmeldelse</a>
-        <a class="orange" href="bord.php">Bord</a>
+                <a class="orange" href="bord.php">Bord</a>
         <a class="orange" href="FAQ.php">FAQ</a>
         <a class="orange" href="tickting/ticket.php">ticket</a>
-        <a class="orange" href="/php/BB.php">Bygg</a>
+        <a class="orange" href="BB.php">Bygg</a>
         <?php if (isset($_SESSION['admin']) && $_SESSION['admin'] === 'Admin') { ?>
                     <a class="orange" href="tickting/brukerS.php">støtte</a>
         <?php } ?>

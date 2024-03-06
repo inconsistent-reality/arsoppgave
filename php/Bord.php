@@ -106,7 +106,7 @@ if (isset($_POST['submit'])) // Sjekker om skjemaet er sendt inn
         <a class="darkorange" href="bord.php">Bord</a>
         <a class="orange" href="FAQ.php">FAQ</a>
         <a class="orange" href="tickting/ticket.php">ticket</a>
-        <a class="orange" href="/php/BB.php">Bygg</a>
+        <a class="orange" href="BB.php">Bygg</a>
         <?php if (isset($_SESSION['admin']) && $_SESSION['admin'] === 'Admin') {?>
                 <?php if (isset($_SESSION['admin']) && $_SESSION['admin'] === 'Admin') {?>
                 <a class="orange" href="tickting/brukerS.php">støtte</a>

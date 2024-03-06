@@ -47,21 +47,29 @@ if (isset($_POST['submit'])) {
 <body>
 
 
-    <div class="meny">
-        <a class="orange" href="/index.php">Hjem</a>
-        <a class="orange" href="/php/Meny.php">Meny</a>
-        <a class="orange" href="/php/Anmeldelse.php">Anmeldelse</a>
-        <a class="orange" href="/php/bord.php">Bord</a>
-        <a class="orange" href="/php/FAQ.php">FAQ</a>
+    </div><div class="meny">
+        <a class="orange" href="../index.php">Hjem</a>
+        <a class="orange" href="../php/Meny.php">Meny</a>
+        <a class="orange" href="../php/Anmeldelse.php">Anmeldelse</a>
+        <a class="orange" href="../php/bord.php">Bord</a>
+        <a class="orange" href="../php/FAQ.php">FAQ</a>
+        <a class="orange" href="../php/tickting/ticket.php">ticket</a>
+        <a class="orange" href="../php/BB.php">Bygg</a>
+        <?php if (isset($_SESSION['admin']) && $_SESSION['admin'] === 'Admin') {?>
+                <?php if (isset($_SESSION['admin']) && $_SESSION['admin'] === 'Admin') {?>
+                <a class="orange" href="../php/tickting/brukerS.php">støtte</a>
+        <?php } } ?>
+        <a class="orange" href="../php/showBB.PHP">se Bygg</a>
 
         <?php
         if ($_SESSION) {
-            echo '<a class="orange" href="/php/passord.php">passord</a>';
+            echo '<a class="orange" href="../php/passord.php">passord</a>';
 
-            echo '<a class="orange" href="/login/logout.php">logout</a>';
+            echo '<a class="orange" href="logout.php">logout</a>';
         } else {
-            echo ' <a class="darkorange" href="/login/inLOG.php">login</a>';
+            echo ' <a class="darkorange" href="inLOG.php">login</a>';
         }
+        
         ?>
     </div>
     <div class="login center">

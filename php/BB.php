@@ -51,12 +51,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <div class="meny">
         <a class="orange" href="/index.php">Hjem</a>
-        <a class="orange" href="/php/Meny.php">Meny</a>
-        <a class="orange" href="/php/Anmeldelse.php">Anmeldelse</a>
-        <a class="orange" href="/php/bord.php">Bord</a>
-        <a class="orange" href="/php/FAQ.php">FAQ</a>
-        <a class="orange" href="/php/tickting/ticket.php">ticket</a>
-        <a class="darkorange" href="/php/BB.php">Bygg</a>
+        <a class="orange" href="Meny.php">Meny</a>
+        <a class="orange" href="Anmeldelse.php">Anmeldelse</a>
+        <a class="orange" href="bord.php">Bord</a>
+        <a class="orange" href="FAQ.php">FAQ</a>
+        <a class="orange" href="tickting/ticket.php">ticket</a>
+        <a class="darkorange" href="BB.php">Bygg</a>
         <?php if (isset($_SESSION['admin']) && $_SESSION['admin'] === 'Admin') { ?>
                     <a class="orange" href="tickting/brukerS.php">støtte</a>
         <?php } ?>

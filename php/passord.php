@@ -61,12 +61,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="meny">
         <div class="linker">
         <a class="orange" href="/index.php">Hjem</a>
-        <a class="orange" href="/php/Meny.php">Meny</a>
-        <a class="orange" href="/php/Anmeldelse.php">Anmeldelse</a>
-        <a class="orange" href="/php/bord.php">Bord</a>
-        <a class="orange" href="/php/FAQ.php">FAQ</a>
-        <a class="orange" href="/php/tickting/ticket.php">ticket</a>
-        <a class="orange" href="/php/BB.php"bygg/a>
+        <a class="orange" href="Meny.php">Meny</a>
+        <a class="orange" href="Anmeldelse.php">Anmeldelse</a>
+        <a class="orange" href="bord.php">Bord</a>
+        <a class="orange" href="FAQ.php">FAQ</a>
+        <a class="orange" href="tickting/ticket.php">ticket</a>
+        <a class="orange" href="BB.php">bygg</a>
         <?php if (isset($_SESSION['admin']) && $_SESSION['admin'] === 'Admin') { ?>
                 <a class="orange" href="tickting/brukerS.php">bruker støtte</a>
         <?php } ?>
@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if ($_SESSION)
         // session er lik økt
         {
-            echo '<a class="orange" href="/php/passord.php">passord</a>';
+            echo '<a class="orange" href="passord.php">passord</a>';
 
             echo '<a class="orange" href="/login/logout.php">logout</a>';
         } else {
